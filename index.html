@@ -23,8 +23,9 @@
 
     <section id="sobre">
       <h2>Sobre Mim</h2>
-      <img src="Adiuleson_profile_photo.jpg" alt="Foto de Perfil de Adíuleson Arlen" width="150px" title="Foto de Perfil de Adíuleson Arlen">
-      <article>  
+      <img src="Adiuleson_profile_photo.jpg" alt="Foto de Perfil de Adíuleson Arlen" width="150px"
+        title="Foto de Perfil de Adíuleson Arlen">
+      <article>
         <p>
           Olá! Meu nome é Adíuleson, sou estudante de Análise e Desenvolvimento de Sistemas com uma paixão por criar
           soluções tecnológicas que impactem o mundo. Estou construindo minha carreira em Engenharia de Software, focado
@@ -82,12 +83,32 @@
         <br>
         <a href="https://github.com/AdiulesonArlen" target="_blank">GitHub</a>
       </address>
-
+      <br>
       <form action="">
 
         <label for="nome">Nome: </label>
         <input type="text" name="nome" id="nome">
-
+        <br>
+        <label for="email">E-mail: </label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="telefone">Telefone</label>
+        <input type="tel">
+        <br>
+        <label for="assunto">Assunto: </label>
+        <select name="assunto" id="assunto">
+          <option value="orcamento">Orçamento</option>
+          <option value="duvidas">Dúvidas</option>
+          <option value="outros">Outros</option>
+        </select>
+        <br>
+        <label for="mensagem">Mensagem: </label>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="7"></textarea>
+        <br>
+        <input type="checkbox" name="inscricao" id="inscricao">
+        <label for="inscricao">Deseja receber minha Newsletter?</label>
+        <br>
+        <input type="submit" value="Enviar mensagem">
       </form>
     </footer>
 
