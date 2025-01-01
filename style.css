@@ -1,0 +1,175 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f9;
+  padding: 0 10px;
+}
+
+/* Estilização do cabeçalho */
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #f39c12;
+}
+
+/* Estilização das seções */
+section {
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização da seção Sobre */
+#sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#sobre img {
+  border-radius: 50%;
+  margin: 10px 0;
+}
+
+#sobre article p {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+/* Estilização das habilidades */
+#habilidade {
+  margin-top: 20px;
+}
+
+#habilidade table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#habilidade th,
+#habilidade td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+#habilidade th {
+  background-color: #f39c12;
+  color: white;
+}
+
+/* Estilização da seção Projetos */
+#projetos article {
+  margin-top: 10px;
+}
+
+/* Estilização do rodapé */
+footer {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+}
+footer p, h2{
+  color: black;
+}
+
+footer h2 {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #f39c12;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Formulário */
+form {
+  margin-top: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #e67e22;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+  }
+
+  #sobre {
+    flex-direction: column;
+  }
+
+  #habilidade table {
+    font-size: 0.9rem;
+  }
+}
